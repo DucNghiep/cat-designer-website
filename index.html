@@ -145,9 +145,18 @@
             <div class="field full"><label for="project_type">Loại công trình</label><select id="project_type" name="project_type"><option>Nhà phố</option><option>Nhà cấp 4</option><option>Biệt thự</option><option>Nhà trọ / căn hộ cho thuê</option><option>Cải tạo, sửa chữa</option><option>Công trình khác</option></select></div>
             <div class="field full"><label for="message">Nội dung cần tư vấn</label><textarea id="message" name="message" placeholder="Ví dụ: diện tích đất, số tầng, địa điểm xây dựng, nhu cầu thiết kế..."></textarea></div>
           </div>
-          <button class="btn primary form-submit" type="submit">Gửi yêu cầu tư vấn →</button>
+          <button class="btn primary form-submit" id="submitBtn" type="submit">
+  Gửi yêu cầu tư vấn →
+</button>
+
+<div id="formStatus" role="status" aria-live="polite"
+     style="display:none; margin-top:15px; padding:13px; border-radius:8px;">
+</div>
           <p class="form-small">Khi nhấn gửi, biểu mẫu sẽ mở trang phản hồi của hệ thống tiếp nhận. Không gửi thông tin nhạy cảm hoặc dữ liệu không cần thiết.</p>
-        </form>
+        </form><iframe name="formResponseFrame"
+        id="formResponseFrame"
+        style="display:none;">
+</iframe>
       </div>
     </div></section>
 
@@ -171,6 +180,40 @@
   <div class="modal" id="imageModal" role="dialog" aria-modal="true" aria-label="Xem ảnh phóng to" onclick="closeModal()"><button type="button" aria-label="Đóng" onclick="closeModal()">×</button><img id="modalImg" src="" alt="Ảnh mẫu nhà phóng to"></div>
 
   <script>
+    const contactForm = document.getElementById('contactForm');
+const responseFrame = document.getElementById('formResponseFrame');
+const formStatus = document.getElementById('formStatus');
+const submitBtn = document.getElementById('submitBtn');
+
+let formSubmitted = false;
+
+contactForm.addEventListener('submit', function() {
+  formSubmitted = true;
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Đang gửi yêu cầu...';
+
+  formStatus.style.display = 'block';
+  formStatus.style.background = '#fff8e9';
+  formStatus.style.color = '#856404';
+  formStatus.textContent = 'Đang gửi thông tin, vui lòng chờ...';
+});
+
+responseFrame.addEventListener('load', function() {
+  if (!formSubmitted) return;
+
+  formSubmitted = false;
+
+  formStatus.style.background = '#e8f7ee';
+  formStatus.style.color = '#16743b';
+  formStatus.textContent =
+    '✓ Đã gửi yêu cầu tư vấn! CAT Designer sẽ sớm liên hệ với bạn.';
+
+  contactForm.reset();
+
+  submitBtn.disabled = false;
+  submitBtn.textContent = 'Gửi yêu cầu tư vấn →';
+});
     const menuBtn=document.getElementById('menuBtn');
     const mainNav=document.getElementById('mainNav');
     menuBtn.addEventListener('click',()=>{const opened=mainNav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(opened));menuBtn.textContent=opened?'×':'☰';});
