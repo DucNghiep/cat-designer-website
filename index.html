@@ -1,284 +1,184 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAT DESIGNER - Thiết kế nhà chuyên nghiệp</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAT Designer | Thiết kế kiến trúc, kết cấu và điện nước</title>
+  <meta name="description" content="CAT Designer tư vấn và triển khai thiết kế nhà ở: kiến trúc, kết cấu, điện nước. Khu vực phục vụ trọng điểm Hà Nội và Thái Nguyên. Liên hệ tư vấn thiết kế.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#101b2b">
+  <link rel="canonical" href="https://ducnghiep.github.io/cat-designer-website/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:site_name" content="CAT Designer">
+  <meta property="og:title" content="CAT Designer | Thiết kế kiến trúc, kết cấu và điện nước">
+  <meta property="og:description" content="Giải pháp thiết kế nhà ở từ kiến trúc đến kết cấu và hệ thống điện nước.">
+  <meta property="og:url" content="https://ducnghiep.github.io/cat-designer-website/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#101b2b;--navy2:#17283d;--blue:#2d6cdf;--blue2:#1d55b5;--ink:#182230;--muted:#647184;--line:#e5eaf0;--paper:#f6f8fb;--white:#fff;--gold:#c7a56a;--radius:18px;--shadow:0 18px 50px rgba(16,27,43,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;font-family:"Be Vietnam Pro",Arial,sans-serif;color:var(--ink);line-height:1.65;background:#fff}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button,input,select,textarea{font:inherit}.container{width:min(1160px,calc(100% - 40px));margin:auto}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--blue);font-size:.76rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.eyebrow:before{content:"";width:27px;height:2px;background:var(--gold)}.section{padding:92px 0}.section.soft{background:var(--paper)}.section.dark{background:var(--navy);color:#fff}.section-head{max-width:700px;margin:0 auto 42px;text-align:center}.section-head .eyebrow{justify-content:center}.section-head h2{font-size:clamp(1.8rem,3vw,2.65rem);line-height:1.2;margin:15px 0;color:var(--navy);letter-spacing:-.04em}.section.dark .section-head h2{color:#fff}.section-head p{color:var(--muted);margin:0}.section.dark .section-head p{color:#b9c5d3}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 21px;border-radius:9px;font-weight:700;border:1px solid transparent;transition:.2s;cursor:pointer}.btn.primary{background:var(--blue);color:#fff}.btn.primary:hover{background:var(--blue2);transform:translateY(-2px)}.btn.light{background:#fff;color:var(--navy)}.btn.outline{border-color:rgba(255,255,255,.45);color:#fff}.btn.outline:hover{background:#fff;color:var(--navy)}.topbar{background:#0a1320;color:#d5deea;font-size:.78rem;padding:8px 0}.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.topbar a{color:#fff}.header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(229,234,240,.9)}.nav-wrap{height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{display:flex;align-items:center;gap:12px;min-width:190px}.brand-mark{width:43px;height:43px;background:var(--navy);color:#fff;display:grid;place-items:center;border-radius:10px;font-size:1.05rem;font-weight:800;letter-spacing:-.08em}.brand-name{font-size:1.04rem;font-weight:800;letter-spacing:.07em;color:var(--navy);line-height:1.2}.brand-sub{font-size:.62rem;color:#7a8797;letter-spacing:.15em;font-weight:700}.nav{display:flex;align-items:center;gap:25px;font-size:.84rem;font-weight:600;color:#465365}.nav a:hover{color:var(--blue)}.nav-cta{padding:10px 16px!important;color:#fff!important;background:var(--blue);border-radius:8px}.menu-btn{display:none;background:none;border:0;font-size:1.7rem;color:var(--navy);cursor:pointer}.hero{position:relative;min-height:650px;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,rgba(9,19,32,.91) 0%,rgba(9,19,32,.75) 48%,rgba(9,19,32,.2) 100%),url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=90") center/cover}.hero-content{max-width:760px;padding:100px 0}.hero .eyebrow{color:#e5c995}.hero h1{font-size:clamp(2.45rem,5.2vw,4.7rem);line-height:1.08;letter-spacing:-.055em;margin:22px 0}.hero h1 span{color:#e5c995}.hero p{font-size:1.08rem;color:#e0e6ee;max-width:620px;margin:0 0 30px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero-note{margin-top:35px;display:flex;gap:24px;flex-wrap:wrap;color:#d4deea;font-size:.82rem}.hero-note span:before{content:"✓";color:#e5c995;font-weight:800;margin-right:8px}.trust-strip{background:#fff;box-shadow:0 12px 35px rgba(16,27,43,.06);position:relative;margin-top:-1px}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:24px 0}.trust-item{padding:5px 25px;border-right:1px solid var(--line)}.trust-item:last-child{border:0}.trust-item strong{display:block;color:var(--navy);font-size:.96rem}.trust-item span{color:var(--muted);font-size:.8rem}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.intro-image{position:relative}.intro-image img{width:100%;height:470px;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow)}.image-tag{position:absolute;left:-18px;bottom:25px;background:#fff;padding:17px 21px;border-radius:12px;box-shadow:var(--shadow);max-width:230px}.image-tag strong{display:block;color:var(--navy);font-size:1.5rem}.image-tag span{font-size:.78rem;color:var(--muted)}.intro-copy h2{font-size:clamp(1.9rem,3vw,2.8rem);line-height:1.2;letter-spacing:-.04em;color:var(--navy);margin:15px 0}.intro-copy p{color:var(--muted)}.check-list{list-style:none;padding:0;margin:25px 0}.check-list li{margin:11px 0;color:#39485a}.check-list li:before{content:"✓";color:var(--blue);font-weight:800;margin-right:11px}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.service-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;transition:.25s}.service-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:#cbd9ef}.service-icon{width:52px;height:52px;border-radius:13px;background:#edf3ff;color:var(--blue);display:grid;place-items:center;font-size:1.4rem;font-weight:800}.service-card h3{margin:20px 0 8px;color:var(--navy);font-size:1.15rem}.service-card p{color:var(--muted);font-size:.9rem;margin:0}.service-card a{display:inline-block;color:var(--blue);font-weight:700;font-size:.83rem;margin-top:18px}.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.project-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 28px rgba(16,27,43,.07)}.project-card img{width:100%;height:230px;object-fit:cover;transition:.35s}.project-card:hover img{transform:scale(1.04)}.project-photo{overflow:hidden}.project-body{padding:21px}.project-label{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);font-weight:800}.project-body h3{font-size:1.05rem;color:var(--navy);margin:8px 0}.project-body p{font-size:.83rem;color:var(--muted);margin:0}.notice{background:#fff8e9;border:1px solid #f1dfb8;color:#745a2b;padding:14px 17px;border-radius:10px;font-size:.82rem;margin-top:24px}.model-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.model-card{border-radius:var(--radius);overflow:hidden;background:#fff;box-shadow:0 8px 25px rgba(16,27,43,.06)}.model-card img{height:210px;width:100%;object-fit:cover}.model-body{padding:20px}.model-body h3{margin:0 0 8px;color:var(--navy)}.model-body p{font-size:.83rem;color:var(--muted);margin:4px 0}.model-body button{border:0;background:none;color:var(--blue);font-weight:700;padding:12px 0 0;cursor:pointer}.process-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}.step{padding:22px 17px;border:1px solid rgba(255,255,255,.16);border-radius:14px;background:rgba(255,255,255,.04)}.step-no{font-size:1.7rem;color:#e5c995;font-weight:800}.step h3{font-size:.96rem;margin:10px 0 6px}.step p{font-size:.78rem;color:#b9c5d3;margin:0}.pricing-box{max-width:850px;margin:auto;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}.price-row{display:flex;justify-content:space-between;gap:20px;padding:20px 26px;border-bottom:1px solid var(--line)}.price-row:last-child{border:0}.price-row span{color:#445164}.price-row strong{color:var(--navy);white-space:nowrap}.pricing-foot{max-width:850px;margin:18px auto 0;color:var(--muted);font-size:.8rem}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;align-items:start}.contact-copy h2{font-size:2.2rem;line-height:1.2;margin:14px 0;color:#fff}.contact-copy p{color:#c1ccda}.contact-detail{margin-top:25px;display:grid;gap:15px}.contact-detail a,.contact-detail div{display:flex;gap:13px;align-items:flex-start;color:#fff}.contact-detail b{display:block;font-size:.9rem}.contact-detail small{display:block;color:#b9c5d3}.form-card{background:#fff;border-radius:var(--radius);padding:30px;color:var(--ink)}.form-card h3{margin:0 0 5px;color:var(--navy);font-size:1.35rem}.form-card>p{margin:0 0 22px;color:var(--muted);font-size:.84rem}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{margin-bottom:15px}.field.full{grid-column:1/-1}.field label{display:block;font-size:.8rem;font-weight:700;margin-bottom:6px;color:#39485a}.field input,.field select,.field textarea{width:100%;padding:12px 13px;border:1px solid #dce3eb;border-radius:8px;background:#fff;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(45,108,223,.1)}.field textarea{min-height:105px;resize:vertical}.form-submit{width:100%;border:0}.form-small{font-size:.72rem;color:#7b8795;margin:12px 0 0}.faq-list{max-width:850px;margin:auto;display:grid;gap:12px}.faq-list details{border:1px solid var(--line);border-radius:12px;padding:17px 20px;background:#fff}.faq-list summary{cursor:pointer;font-weight:700;color:var(--navy)}.faq-list details p{color:var(--muted);font-size:.88rem;margin-bottom:0}.footer{background:#0a1320;color:#d5deea;padding:35px 0}.footer-row{display:flex;justify-content:space-between;gap:25px;align-items:center;flex-wrap:wrap}.footer .brand-name{color:#fff}.footer small{color:#8f9cad}.footer-links{display:flex;gap:18px;flex-wrap:wrap;font-size:.8rem}.float-actions{position:fixed;right:20px;bottom:20px;z-index:40;display:grid;gap:10px}.float-actions a{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:.72rem;font-weight:800;box-shadow:0 8px 25px rgba(0,0,0,.2)}.float-zalo{background:#0878e8}.float-call{background:#13a36d}.modal{position:fixed;inset:0;background:rgba(4,10,18,.88);z-index:100;display:none;align-items:center;justify-content:center;padding:25px}.modal.open{display:flex}.modal img{max-width:min(100%,1000px);max-height:85vh;border-radius:12px}.modal button{position:absolute;right:25px;top:18px;color:#fff;background:none;border:0;font-size:2rem;cursor:pointer}
+    @media(max-width:900px){.nav{gap:14px;font-size:.77rem}.intro-grid{gap:35px}.process-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:720px){.container{width:min(100% - 30px,560px)}.topbar .container{justify-content:center}.nav-wrap{height:68px}.menu-btn{display:block}.nav{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;padding:18px 22px 24px;border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(0,0,0,.08);flex-direction:column;align-items:stretch}.nav.open{display:flex}.nav a{padding:8px 0}.nav .nav-cta{text-align:center}.hero{min-height:610px;background-position:58% center}.hero-content{padding:80px 0}.hero h1{font-size:2.55rem}.hero p{font-size:.96rem}.trust-grid{grid-template-columns:1fr;gap:13px;padding:20px 0}.trust-item{border:0;border-bottom:1px solid var(--line);padding:8px 4px}.trust-item:last-child{border:0}.section{padding:67px 0}.intro-grid,.contact-grid{grid-template-columns:1fr}.intro-image{order:2}.intro-image img{height:330px}.image-tag{left:10px}.service-grid,.project-grid,.model-grid{grid-template-columns:1fr}.project-card img{height:240px}.process-grid{grid-template-columns:1fr 1fr}.price-row{padding:17px;align-items:flex-start;font-size:.86rem}.form-card{padding:22px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-row{align-items:flex-start;flex-direction:column}.float-actions{right:13px;bottom:13px}.float-actions a{width:47px;height:47px}}
+    @media(max-width:390px){.process-grid{grid-template-columns:1fr}.hero h1{font-size:2.2rem}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"CAT Designer",
+    "url":"https://ducnghiep.github.io/cat-designer-website/",
+    "email":"znghiep09@gmail.com",
+    "telephone":"+84362379069",
+    "description":"Dịch vụ tư vấn và thiết kế nhà ở gồm kiến trúc, kết cấu và hệ thống điện nước.",
+    "areaServed":[{"@type":"AdministrativeArea","name":"Hà Nội"},{"@type":"AdministrativeArea","name":"Thái Nguyên"}]
+  }
+  </script>
 </head>
-
-<body class="font-sans bg-gray-100">
-
-<!-- HERO / BACKGROUND IMAGE -->
-<section class="relative h-[500px] bg-cover bg-center" 
-    style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');">
-
-    <div class="absolute inset-0 bg-black/50"></div>
-
-    <div class="relative z-10 text-white text-center flex flex-col justify-center h-full px-4">
-        <h1 class="text-5xl font-bold mb-4">CAT DESIGNER</h1>
-        <p class="text-xl">Thiết kế kết cấu - Kiến trúc - Điện nước chuyên nghiệp</p>
-        <p class="mt-4">Nhận thiết kế nhà ở dân dụng, biệt thự, công trình toàn quốc</p>
+<body>
+  <div class="topbar"><div class="container"><span>Thiết kế nhà ở • Kiến trúc • Kết cấu • Điện nước</span><span>Khu vực phục vụ trọng điểm: <a href="#contact">Hà Nội &amp; Thái Nguyên</a></span></div></div>
+  <header class="header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="CAT Designer trang chủ"><span class="brand-mark">CAT</span><span><span class="brand-name">CAT DESIGNER</span><span class="brand-sub">ARCHITECTURE · STRUCTURE · MEP</span></span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Mở menu" aria-expanded="false">☰</button>
+      <nav class="nav" id="mainNav">
+        <a href="#about">Giới thiệu</a><a href="#services">Dịch vụ</a><a href="#projects">Dự án</a><a href="#process">Quy trình</a><a href="#pricing">Báo giá</a><a href="#contact" class="nav-cta">Nhận tư vấn</a>
+      </nav>
     </div>
+  </header>
 
-</section>
+  <main>
+    <section class="hero" id="home">
+      <div class="container"><div class="hero-content">
+        <span class="eyebrow">Thiết kế xây dựng nhà ở</span>
+        <h1>Không gian sống tốt bắt đầu từ <span>thiết kế chỉn chu.</span></h1>
+        <p>CAT Designer đồng hành cùng khách hàng trong quá trình lên phương án và triển khai hồ sơ thiết kế nhà ở — từ kiến trúc, kết cấu đến hệ thống điện nước.</p>
+        <div class="hero-actions"><a class="btn primary" href="#contact">Trao đổi nhu cầu <span>→</span></a><a class="btn outline" href="#projects">Khám phá dự án</a></div>
+        <div class="hero-note"><span>Tư vấn theo nhu cầu thực tế</span><span>Khảo sát công trình khi cần</span><span>Hà Nội &amp; Thái Nguyên</span></div>
+      </div></div>
+    </section>
 
-<!-- SERVICES -->
-<section class="py-12">
-    <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-10">Dịch vụ của chúng tôi</h2>
+    <div class="trust-strip"><div class="container trust-grid">
+      <div class="trust-item"><strong>Giải pháp đồng bộ</strong><span>Kết nối kiến trúc, kết cấu và hệ thống kỹ thuật.</span></div>
+      <div class="trust-item"><strong>Trao đổi rõ ràng</strong><span>Thống nhất phạm vi, tiến độ và sản phẩm bàn giao.</span></div>
+      <div class="trust-item"><strong>Linh hoạt khu vực</strong><span>Làm việc online, khảo sát trực tiếp khi phù hợp.</span></div>
+    </div></div>
 
-        <div class="grid md:grid-cols-3 gap-8">
+    <section class="section" id="about"><div class="container intro-grid">
+      <div class="intro-image"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85" alt="Không gian nhà ở hiện đại" loading="lazy"><div class="image-tag"><strong>CAT DESIGNER</strong><span>Thiết kế có định hướng, hồ sơ có hệ thống.</span></div></div>
+      <div class="intro-copy"><span class="eyebrow">Về CAT Designer</span><h2>Thiết kế phù hợp với nhu cầu, công năng và ngân sách.</h2><p>CAT Designer hướng đến các giải pháp thiết kế nhà ở dân dụng rõ ràng, thực tế và phù hợp với điều kiện sử dụng của từng gia đình.</p><p>Mỗi công trình bắt đầu từ việc lắng nghe nhu cầu, tìm hiểu hiện trạng và thống nhất phương án trước khi triển khai hồ sơ.</p>
+        <ul class="check-list"><li>Tư vấn phương án theo diện tích và nhu cầu sử dụng.</li><li>Phối hợp kiến trúc với giải pháp kết cấu và điện nước.</li><li>Trao đổi, cập nhật trong quá trình triển khai.</li><li>Tiếp nhận yêu cầu tại Hà Nội, Thái Nguyên và khu vực phù hợp.</li></ul>
+        <a class="btn primary" href="#contact">Liên hệ CAT Designer</a>
+      </div>
+    </div></section>
 
-            <!-- SERVICE 1 -->
-            <div class="bg-white rounded-2xl shadow overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Thiết kế trọn gói</h3>
-                    <p>Thiết kế kết cấu, kiến trúc, điện nước cho nhà ở dân dụng.</p>
-                </div>
-            </div>
+    <section class="section soft" id="services"><div class="container">
+      <div class="section-head"><span class="eyebrow">Dịch vụ</span><h2>Các hạng mục thiết kế</h2><p>Lựa chọn từng hạng mục hoặc trao đổi nhu cầu để xác định phạm vi công việc phù hợp.</p></div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon">⌂</div><h3>Thiết kế kiến trúc</h3><p>Định hướng mặt bằng công năng, hình khối, mặt đứng và phối cảnh cho nhà ở dân dụng.</p><a href="#contact">Trao đổi dịch vụ →</a></article>
+        <article class="service-card"><div class="service-icon">▦</div><h3>Thiết kế kết cấu</h3><p>Triển khai hồ sơ kết cấu theo phạm vi công trình và cơ sở đầu vào được thống nhất.</p><a href="#contact">Trao đổi dịch vụ →</a></article>
+        <article class="service-card"><div class="service-icon">⌁</div><h3>Thiết kế điện nước (MEP)</h3><p>Bố trí và thể hiện hệ thống điện, cấp thoát nước phù hợp với phương án kiến trúc.</p><a href="#contact">Trao đổi dịch vụ →</a></article>
+      </div>
+      <div class="notice">Phạm vi cung cấp, nội dung hồ sơ, việc khảo sát và các yêu cầu về chủ trì, kiểm tra hoặc ký hồ sơ chuyên môn sẽ được xác định theo từng công trình và quy định hiện hành.</div>
+    </div></section>
 
-            <!-- SERVICE 2 -->
-            <div class="bg-white rounded-2xl shadow overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1599423300746-b62533397364" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Thiết kế kết cấu</h3>
-                    <p>Nhận thiết kế kết cấu nhà cao tầng, biệt thự, công trình phức tạp.</p>
-                </div>
-            </div>
+    <section class="section" id="projects"><div class="container">
+      <div class="section-head"><span class="eyebrow">Hồ sơ năng lực</span><h2>Một số hình ảnh tham khảo</h2><p>Khu vực này sẽ là nơi giới thiệu các công trình và hồ sơ thiết kế do CAT Designer thực hiện.</p></div>
+      <div class="project-grid">
+        <article class="project-card"><div class="project-photo"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Hình ảnh nhà ở hiện đại tham khảo" loading="lazy"></div><div class="project-body"><span class="project-label">Hình ảnh tham khảo</span><h3>Nhà ở phong cách hiện đại</h3><p>Thay bằng ảnh công trình hoặc phối cảnh thực tế của CAT Designer.</p></div></article>
+        <article class="project-card"><div class="project-photo"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=80" alt="Hình ảnh kiến trúc nhà ở tham khảo" loading="lazy"></div><div class="project-body"><span class="project-label">Hình ảnh tham khảo</span><h3>Không gian nhà ở</h3><p>Có thể bổ sung mặt bằng, mặt đứng và hình ảnh triển khai.</p></div></article>
+        <article class="project-card"><div class="project-photo"><img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&w=900&q=80" alt="Hình ảnh công trình tham khảo" loading="lazy"></div><div class="project-body"><span class="project-label">Hình ảnh tham khảo</span><h3>Ý tưởng thiết kế công trình</h3><p>Ghi rõ vai trò, hạng mục và tình trạng của từng dự án khi đăng.</p></div></article>
+      </div>
+      <div class="notice">Lưu ý: Các ảnh hiện tại chỉ mang tính minh họa/tham khảo, không được hiểu là công trình do CAT Designer thiết kế hoặc thi công. Hãy thay bằng tư liệu có quyền sử dụng và ghi đúng vai trò thực tế.</div>
+    </div></section>
 
-            <!-- SERVICE 3 -->
-            <div class="bg-white rounded-2xl shadow overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1581093458791-9f3c3900df5b" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Hồ sơ xin phép xây dựng</h3>
-                    <p>Hỗ trợ lập hồ sơ xin phép xây dựng nhanh chóng.</p>
-                </div>
-            </div>
+    <section class="section soft" id="models"><div class="container">
+      <div class="section-head"><span class="eyebrow">Thư viện ý tưởng</span><h2>Mẫu nhà để tham khảo</h2><p>Một số phong cách nhà ở phổ biến để khách hàng hình dung và trao đổi ý tưởng ban đầu.</p></div>
+      <div class="model-grid">
+        <article class="model-card"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80" alt="Nhà phố hiện đại tham khảo" loading="lazy"><div class="model-body"><h3>Nhà phố hiện đại</h3><p>Phong cách tối giản, phù hợp khu đất đô thị.</p><button type="button" onclick="openModal(this.closest('.model-card').querySelector('img').src)">Phóng to hình ảnh ↗</button></div></article>
+        <article class="model-card"><img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80" alt="Biệt thự tham khảo" loading="lazy"><div class="model-body"><h3>Biệt thự</h3><p>Tham khảo hình khối, vật liệu và tổ chức không gian.</p><button type="button" onclick="openModal(this.closest('.model-card').querySelector('img').src)">Phóng to hình ảnh ↗</button></div></article>
+        <article class="model-card"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="Nhà ở một tầng tham khảo" loading="lazy"><div class="model-body"><h3>Nhà ở một tầng</h3><p>Gợi ý tổ chức công năng trên mặt bằng rộng.</p><button type="button" onclick="openModal(this.closest('.model-card').querySelector('img').src)">Phóng to hình ảnh ↗</button></div></article>
+      </div>
+      <p class="pricing-foot">Hình ảnh và ý tưởng tham khảo không phải hồ sơ thiết kế có sẵn để xây dựng. Phương án thực tế cần căn cứ khu đất, nhu cầu và quy định áp dụng.</p>
+    </div></section>
 
+    <section class="section dark" id="process"><div class="container">
+      <div class="section-head"><span class="eyebrow">Quy trình làm việc</span><h2>Rõ ràng từ bước đầu tiên</h2><p>Quy trình có thể điều chỉnh theo quy mô và tính chất từng công trình.</p></div>
+      <div class="process-grid">
+        <div class="step"><div class="step-no">01</div><h3>Tiếp nhận nhu cầu</h3><p>Trao đổi loại nhà, diện tích, ngân sách và mong muốn.</p></div>
+        <div class="step"><div class="step-no">02</div><h3>Khảo sát &amp; tư vấn</h3><p>Thu thập thông tin khu đất, hiện trạng khi cần.</p></div>
+        <div class="step"><div class="step-no">03</div><h3>Thống nhất phương án</h3><p>Làm rõ giải pháp, phạm vi và chi phí dự kiến.</p></div>
+        <div class="step"><div class="step-no">04</div><h3>Triển khai hồ sơ</h3><p>Thực hiện các bản vẽ theo nội dung đã thống nhất.</p></div>
+        <div class="step"><div class="step-no">05</div><h3>Bàn giao &amp; hỗ trợ</h3><p>Bàn giao sản phẩm và trao đổi các nội dung liên quan.</p></div>
+      </div>
+    </div></section>
+
+    <section class="section" id="pricing"><div class="container">
+      <div class="section-head"><span class="eyebrow">Chi phí tham khảo</span><h2>Bảng giá dịch vụ</h2><p>Giá dưới đây được giữ theo thông tin trên website cũ; cần xác nhận lại trước khi áp dụng cho khách hàng.</p></div>
+      <div class="pricing-box">
+        <div class="price-row"><span>Thiết kế trọn gói nhà ở</span><strong>90.000 – 180.000 đ/m²</strong></div>
+        <div class="price-row"><span>Thiết kế kết cấu riêng</span><strong>40.000 – 60.000 đ/m²</strong></div>
+        <div class="price-row"><span>Thiết kế điện nước</span><strong>30.000 đ/m²</strong></div>
+      </div>
+      <p class="pricing-foot">Đơn giá chỉ mang tính tham khảo, không phải báo giá hoặc cam kết cố định. Chi phí thực tế phụ thuộc quy mô, loại công trình, địa điểm, mức độ chi tiết, phạm vi hồ sơ và yêu cầu khảo sát. Vui lòng liên hệ để nhận báo giá theo nhu cầu.</p>
+    </div></section>
+
+    <section class="section dark" id="contact"><div class="container contact-grid">
+      <div class="contact-copy"><span class="eyebrow">Liên hệ</span><h2>Bắt đầu trao đổi về ngôi nhà của bạn.</h2><p>Chia sẻ thông tin cơ bản về công trình. CAT Designer sẽ tiếp nhận yêu cầu và phản hồi qua thông tin liên hệ bạn cung cấp.</p>
+        <div class="contact-detail">
+          <a href="tel:+84362379069"><span>☎</span><span><b>Điện thoại</b><small>0362 379 069</small></span></a>
+          <a href="https://zalo.me/0362379069" target="_blank" rel="noopener"><span>◉</span><span><b>Zalo</b><small>Nhắn tin trực tiếp với CAT Designer</small></span></a>
+          <a href="mailto:znghiep09@gmail.com"><span>✉</span><span><b>Email</b><small>znghiep09@gmail.com</small></span></a>
+          <div><span>⌖</span><span><b>Khu vực phục vụ trọng điểm</b><small>Hà Nội và Thái Nguyên; địa điểm khác trao đổi theo từng yêu cầu.</small></span></div>
         </div>
-    </div>
-</section>
+      </div>
+      <div class="form-card"><h3>Đăng ký tư vấn</h3><p>Điền thông tin, các trường có dấu * là bắt buộc.</p>
+        <form action="https://script.google.com/macros/s/AKfycbz3Xx2clQp1JL45NpHXz7Bf8ZqN5cV42nB72uETtD5EM5foUFGQjDFwOXPbTyqR4oLVjg/exec" method="POST" target="_blank" id="contactForm">
+          <div class="form-grid">
+            <div class="field"><label for="name">Họ và tên *</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Nhập họ tên" required></div>
+            <div class="field"><label for="phone">Số điện thoại *</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Nhập số điện thoại" required></div>
+            <div class="field full"><label for="project_type">Loại công trình</label><select id="project_type" name="project_type"><option>Nhà phố</option><option>Nhà cấp 4</option><option>Biệt thự</option><option>Nhà trọ / căn hộ cho thuê</option><option>Cải tạo, sửa chữa</option><option>Công trình khác</option></select></div>
+            <div class="field full"><label for="message">Nội dung cần tư vấn</label><textarea id="message" name="message" placeholder="Ví dụ: diện tích đất, số tầng, địa điểm xây dựng, nhu cầu thiết kế..."></textarea></div>
+          </div>
+          <button class="btn primary form-submit" type="submit">Gửi yêu cầu tư vấn →</button>
+          <p class="form-small">Khi nhấn gửi, biểu mẫu sẽ mở trang phản hồi của hệ thống tiếp nhận. Không gửi thông tin nhạy cảm hoặc dữ liệu không cần thiết.</p>
+        </form>
+      </div>
+    </div></section>
 
-<!-- PROJECTS -->
-<section class="bg-white py-12">
-    <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-10">Dự án minh họa</h2>
+    <section class="section soft" id="faq"><div class="container">
+      <div class="section-head"><span class="eyebrow">Câu hỏi thường gặp</span><h2>Thông tin trước khi liên hệ</h2></div>
+      <div class="faq-list">
+        <details><summary>CAT Designer có nhận thiết kế ngoài Hà Nội và Thái Nguyên không?</summary><p>CAT Designer ưu tiên khu vực Hà Nội và Thái Nguyên. Các địa điểm khác có thể trao đổi tùy phạm vi công việc, điều kiện khảo sát và khả năng triển khai.</p></details>
+        <details><summary>Tôi cần chuẩn bị gì khi yêu cầu tư vấn?</summary><p>Có thể chuẩn bị địa điểm, kích thước khu đất (nếu có), nhu cầu số tầng, số phòng, ngân sách dự kiến và hình ảnh hiện trạng.</p></details>
+        <details><summary>Báo giá có cố định theo đơn giá trên website không?</summary><p>Không. Đơn giá chỉ để tham khảo. Báo giá chính thức cần căn cứ quy mô, loại công trình và phạm vi hồ sơ được thống nhất.</p></details>
+      </div>
+    </div></section>
+  </main>
 
-        <div class="grid md:grid-cols-3 gap-6">
+  <footer class="footer"><div class="container footer-row">
+    <a class="brand" href="#home"><span class="brand-mark">CAT</span><span><span class="brand-name">CAT DESIGNER</span><span class="brand-sub">ARCHITECTURE · STRUCTURE · MEP</span></span></a>
+    <div class="footer-links"><a href="#services">Dịch vụ</a><a href="#projects">Dự án</a><a href="#contact">Liên hệ</a><a href="mailto:znghiep09@gmail.com">Email</a></div>
+    <small>© <span id="year"></span> CAT Designer. All rights reserved.</small>
+  </div></footer>
 
-            <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b" class="rounded-2xl shadow h-64 w-full object-cover">
+  <div class="float-actions"><a class="float-zalo" href="https://zalo.me/0362379069" target="_blank" rel="noopener" aria-label="Chat Zalo">Zalo</a><a class="float-call" href="tel:+84362379069" aria-label="Gọi CAT Designer">Gọi</a></div>
+  <div class="modal" id="imageModal" role="dialog" aria-modal="true" aria-label="Xem ảnh phóng to" onclick="closeModal()"><button type="button" aria-label="Đóng" onclick="closeModal()">×</button><img id="modalImg" src="" alt="Ảnh mẫu nhà phóng to"></div>
 
-            <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde" class="rounded-2xl shadow h-64 w-full object-cover">
-
-            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c" class="rounded-2xl shadow h-64 w-full object-cover">
-
-        </div>
-    </div>
-</section>
-
-<!-- HOUSE MODELS REFERENCE -->
-<section class="py-12 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-10">Các kiểu mẫu nhà tham khảo</h2>
-
-        <div class="grid md:grid-cols-3 gap-8">
-
-            <!-- CARD -->
-            <div class="bg-white rounded-2xl shadow overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d" 
-                     onclick="openModal(this.src)"
-                     class="w-full h-48 object-cover cursor-pointer hover:opacity-80">
-                <div class="p-5">
-                    <h3 class="font-bold text-lg mb-2">Nhà phố hiện đại</h3>
-                    <p class="text-sm mb-2">Diện tích: 80 - 120 m²</p>
-                    <p class="text-sm mb-2">Chi phí xây dựng: ~ 1.2 - 1.8 tỷ</p>
-                    <p class="text-sm mb-3">Phong cách tối giản, phù hợp nhà ống đô thị.</p>
-                    <button class="bg-blue-600 text-white px-4 py-2 rounded-xl w-full hover:bg-blue-700">
-                        Xem chi tiết
-                    </button>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-2xl shadow overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227" 
-                     onclick="openModal(this.src)"
-                     class="w-full h-48 object-cover cursor-pointer hover:opacity-80">
-                <div class="p-5">
-                    <h3 class="font-bold text-lg mb-2">Biệt thự tân cổ điển</h3>
-                    <p class="text-sm mb-2">Diện tích: 200 - 350 m²</p>
-                    <p class="text-sm mb-2">Chi phí xây dựng: ~ 3 - 6 tỷ</p>
-                    <p class="text-sm mb-3">Thiết kế sang trọng với cột và phào chỉ.</p>
-                    <button class="bg-blue-600 text-white px-4 py-2 rounded-xl w-full hover:bg-blue-700">
-                        Xem chi tiết
-                    </button>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-2xl shadow overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" 
-                     onclick="openModal(this.src)"
-                     class="w-full h-48 object-cover cursor-pointer hover:opacity-80">
-                <div class="p-5">
-                    <h3 class="font-bold text-lg mb-2">Nhà cấp 4 mái Thái</h3>
-                    <p class="text-sm mb-2">Diện tích: 90 - 140 m²</p>
-                    <p class="text-sm mb-2">Chi phí xây dựng: ~ 900 triệu - 1.5 tỷ</p>
-                    <p class="text-sm mb-3">Mái dốc thoát nước tốt, phổ biến nông thôn.</p>
-                    <button class="bg-blue-600 text-white px-4 py-2 rounded-xl w-full hover:bg-blue-700">
-                        Xem chi tiết
-                    </button>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-2xl shadow overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1600047509358-9dc75507daeb" 
-                     onclick="openModal(this.src)"
-                     class="w-full h-48 object-cover cursor-pointer hover:opacity-80">
-                <div class="p-5">
-                    <h3 class="font-bold text-lg mb-2">Nhà ống 3 tầng</h3>
-                    <p class="text-sm mb-2">Diện tích: 60 - 100 m²</p>
-                    <p class="text-sm mb-2">Chi phí xây dựng: ~ 1.5 - 2.5 tỷ</p>
-                    <p class="text-sm mb-3">Tối ưu diện tích nhỏ trong đô thị.</p>
-                    <button class="bg-blue-600 text-white px-4 py-2 rounded-xl w-full hover:bg-blue-700">
-                        Xem chi tiết
-                    </button>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-2xl shadow overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c" 
-                     onclick="openModal(this.src)"
-                     class="w-full h-48 object-cover cursor-pointer hover:opacity-80">
-                <div class="p-5">
-                    <h3 class="font-bold text-lg mb-2">Biệt thự mái Nhật</h3>
-                    <p class="text-sm mb-2">Diện tích: 180 - 300 m²</p>
-                    <p class="text-sm mb-2">Chi phí xây dựng: ~ 2.5 - 4.5 tỷ</p>
-                    <p class="text-sm mb-3">Phong cách hiện đại, rất được ưa chuộng.</p>
-                    <button class="bg-blue-600 text-white px-4 py-2 rounded-xl w-full hover:bg-blue-700">
-                        Xem chi tiết
-                    </button>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-2xl shadow overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae" 
-                     onclick="openModal(this.src)"
-                     class="w-full h-48 object-cover cursor-pointer hover:opacity-80">
-                <div class="p-5">
-                    <h3 class="font-bold text-lg mb-2">Nhà vườn 1 tầng</h3>
-                    <p class="text-sm mb-2">Diện tích: 120 - 200 m²</p>
-                    <p class="text-sm mb-2">Chi phí xây dựng: ~ 1.3 - 2.2 tỷ</p>
-                    <p class="text-sm mb-3">Không gian rộng rãi, nhiều cửa sổ.</p>
-                    <button class="bg-blue-600 text-white px-4 py-2 rounded-xl w-full hover:bg-blue-700">
-                        Xem chi tiết
-                    </button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- IMAGE MODAL -->
-<div id="imageModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50" onclick="closeModal()">
-    <img id="modalImg" class="max-h-[90%] max-w-[90%] rounded-2xl shadow-2xl">
-</div>
-
-<script>
-function openModal(src) {
-    document.getElementById('imageModal').classList.remove('hidden');
-    document.getElementById('imageModal').classList.add('flex');
-    document.getElementById('modalImg').src = src;
-}
-
-function closeModal() {
-    document.getElementById('imageModal').classList.add('hidden');
-    document.getElementById('imageModal').classList.remove('flex');
-}
-</script>
-
-<!-- PRICING -->
-<section class="py-12">
-    <div class="max-w-4xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-8">Bảng giá tham khảo</h2>
-
-        <div class="bg-white p-6 rounded-2xl shadow">
-            <ul class="space-y-3 text-lg">
-                <li>Thiết kế trọn gói nhà ở: <b>90.000 - 180.000 đ/m²</b></li>
-                <li>Thiết kế kết cấu riêng: <b>40.000 - 60.000 đ/m²</b></li>
-                <li>Thiết kế điện nước: <b>30.000 đ/m²</b></li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<!-- CONTACT FORM -->
-<section class="bg-white py-12">
-    <div class="max-w-3xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-6">Đăng ký tư vấn miễn phí</h2>
-
-        <div class="bg-gray-50 p-6 rounded-2xl shadow">
-            <form action="https://script.google.com/macros/s/AKfycbz3Xx2clQp1JL45NpHXz7Bf8ZqN5cV42nB72uETtD5EM5foUFGQjDFwOXPbTyqR4oLVjg/exec" method="POST" onsubmit="showSuccess()">
-                <div class="mb-4">
-                    <label class="block font-semibold mb-1">Họ và tên</label>
-                    <input name="name" type="text" class="w-full border p-3 rounded" placeholder="Nhập họ tên" required>
-                </div>
-
-                <div class="mb-4">
-                    <label class="block font-semibold mb-1">Số điện thoại</label>
-                    <input name="phone" type="text" class="w-full border p-3 rounded" placeholder="Nhập số điện thoại" required>
-                </div>
-
-                <div class="mb-4">
-                    <label class="block font-semibold mb-1">Loại công trình</label>
-                    <select name="project_type" class="w-full border p-3 rounded">
-                        <option>Nhà phố</option>
-                        <option>Biệt thự</option>
-                        <option>Nhà trọ</option>
-                        <option>Công trình khác</option>
-                    </select>
-                </div>
-
-                <div class="mb-4">
-                    <label class="block font-semibold mb-1">Nội dung</label>
-                    <textarea name="message" class="w-full border p-3 rounded" placeholder="Mô tả nhu cầu"></textarea>
-                </div>
-
-                <button class="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold w-full hover:bg-blue-700">
-                    Gửi yêu cầu tư vấn
-                </button>
-            </form>
-        </div>
-    </div>
-</section>
-
-<!-- CONTACT INFO -->
-<section class="bg-blue-600 text-white py-10 text-center">
-    <h2 class="text-2xl font-bold mb-3">Liên hệ</h2>
-    <p class="text-lg">Điện thoại / Zalo: 0362 379 069
-    </p>
-    <p class="text-lg">Email: znghiep09@gmail.com</p>
-    <p class="text-lg">Facebook: CAT DESIGNER</p>
-</section>
-
-<!-- FLOATING ZALO BUTTON -->
-<a href="https://zalo.me/0362379069" target="_blank"
-   class="fixed bottom-6 right-6 bg-blue-500 text-white px-5 py-3 rounded-full shadow-lg text-lg font-bold hover:bg-blue-600">
-   Chat Zalo
-</a>
-
-<!-- FOOTER -->
-<footer class="bg-gray-900 text-white text-center py-4">
-    <p>© 2026 CAT DESIGNER. All rights reserved.</p>
-</footer>
-
-<script>
-function showSuccess() {
-    alert("Đã gửi thông tin thành công! Chúng tôi sẽ liên hệ sớm.");
-}
-</script>
-
+  <script>
+    const menuBtn=document.getElementById('menuBtn');
+    const mainNav=document.getElementById('mainNav');
+    menuBtn.addEventListener('click',()=>{const opened=mainNav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(opened));menuBtn.textContent=opened?'×':'☰';});
+    mainNav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{mainNav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰';}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+    function openModal(src){document.getElementById('modalImg').src=src;document.getElementById('imageModal').classList.add('open');}
+    function closeModal(){document.getElementById('imageModal').classList.remove('open');}
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+  </script>
 </body>
 </html>
-
